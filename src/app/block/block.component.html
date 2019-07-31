@@ -1,0 +1,19 @@
+<div class="block"
+ [ngClass]="{'hide':isHide==true,'show':isHide==false,'lose':isMine==true}" 
+ (mouseup)="$event.which == 1 ? show():mark($event)" (mousedown)="anim()">
+<span *ngIf="number!=0 && !isHide;else flag">
+  <span [ngClass]="{'colorNumberRed':number==-1,
+  'colorNumberBlue':number==1,'colorNumberGreen':number==2,
+  'colorNumberOrange':number==3,'colorNumberGreenYellow':number==4,
+  'colorNumberLightBlue':number==5,'colorNumberPurple':number==6}" >
+    <span *ngIf="number!=-1;else mine">
+      {{number}}
+    </span>
+    <ng-template #mine>X</ng-template>
+  </span>
+</span>
+<ng-template #flag><span *ngIf="isBlock==true || this.GeneralStatusService.GameOver && number!=0">
+  <img src="assets\\img\\Flag.png" alt="F">
+</span></ng-template>
+
+</div>

@@ -1,0 +1,42 @@
+.blockMines{
+    background-color: black;
+    color:yellow;
+    width:40px;
+    height:20px;
+    padding-top: 4px;
+    margin-bottom:5px;
+    text-align: center;
+    cursor:default;
+    font-weight: bold;
+    font-family: lato;
+    margin-top: 3px;
+    margin-left:2px;
+}
+.blockTime{
+    background-color: black;
+    color:rgb(255, 0, 0);
+    width:40px;
+    height:20px;
+    padding-top: 4px;
+    margin-bottom:5px;
+    text-align: center;
+    cursor:default;
+    font-weight: bold;
+    font-family: lato;
+    margin-top: 3px;
+    margin-left:2px;
+}
+img{
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left:9px;
+    margin-right:6px;
+    width: 25px;
+    height: 25px;
+}
+.container{
+    display:flex;
+    background-color: aliceblue;
+    width: 125px;
+    border-bottom: .5px solid black;
+}

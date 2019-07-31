@@ -1,0 +1,17 @@
+<app-stats [minesLeft]=minesinStage></app-stats>
+<span *ngFor="let e of columns; let i = index">
+    <span class="row-block" >
+      <!-- *ngFor="let e of  [].constructor(10)" -->
+      <span *ngFor="let e of rows; let j = index">
+        <app-block 
+        (itemNumber)="resultNumber($event)"
+        (itemCorrectDetect)="correctDetect($event)"
+        (itemMine)="resultMine($event)"
+        (itemEmpty)="resultEmpty($event)"
+         [isHide]=matAdvice[j+i*rows.length]
+          [number]= mat[j+i*rows.length]
+           [pos]=j+i*rows.length>
+        </app-block>
+      </span>
+    </span>
+  </span >

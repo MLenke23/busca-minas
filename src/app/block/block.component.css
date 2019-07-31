@@ -1,0 +1,50 @@
+.block{
+    width:20px;
+    height:20px;
+    text-align: center;
+    border: .5px solid rgba(0, 0, 0, 0.411);
+    border-bottom:.25px solid rgb(255, 255, 255);
+    /*cursor:default;*/
+    font-weight: bold;
+    font-family: lato;
+
+  }
+  .hide{
+       background-color: rgb(214, 214, 214);
+      
+  cursor: pointer;
+  }
+  .show{
+       background-color: rgb(161, 159, 159);
+       cursor:default;
+  }
+  .lose{
+    background-color: rgb(145, 0, 0);
+  }
+
+  .colorNumberRed{
+    color:red;
+  }
+  .colorNumberBlue{
+    color:blue;
+  }
+  .colorNumberGreen{
+    color:green;
+  }
+  .colorNumberGreenYellow{
+    color:greenyellow;
+  }
+  .colorNumberLightBlue{
+    color:lightblue;
+  }
+  .colorNumberPurple{
+    color:purple;
+  }
+  .colorNumberOrange{
+    color:rgb(255, 230, 0);
+  }
+  /*  background-color: rgb(141, 141, 141);*/
+  img{
+    margin-top:2px;
+   width: 15px;
+  }

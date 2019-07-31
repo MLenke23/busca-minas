@@ -1,0 +1,11 @@
+<div class="container">
+ <div class="blockMines">{{minesLeft}}</div>
+
+ <span *ngIf="URLImgArray.length>0">
+  <img [src]="URLImgArray[this.GeneralStatusService.getFace()]" alt="=)" 
+  (click)="refreshPage()">
+ </span>
+
+ <div class="blockTime">{{time}}</div>
+
+</div>
